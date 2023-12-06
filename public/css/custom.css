@@ -1,0 +1,25 @@
+.app-container .content-container .side-menu:hover {
+    width: 330px!important;
+}
+
+.img-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.img-icon-void {
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+}
+
+.img-letter-position {
+    width: 100%;
+    height: 150px
+}
+
+.img-letter-position-void {
+    background-color: #cccccc;
+    width: 100%;
+    height: 150px
+}
