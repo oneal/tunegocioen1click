@@ -93,6 +93,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    @include('web.alert')
+                                </div>
                                 <div class="row mt-3">
                                     <div class="col-12">
                                         <button type="submit" class="btn button-click">Enviar</button>
