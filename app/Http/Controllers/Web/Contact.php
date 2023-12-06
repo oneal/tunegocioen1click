@@ -48,7 +48,7 @@ class Contact extends Controller
             'messageC' => $messageC
         ];
 
-        if(Mail::to('info@tunegocioen1click.online')->send(new \App\Mail\Contact($data))){
+        if(Mail::to(config('mail.from.address_info'))->send(new \App\Mail\Contact($data))){
             $request->session()->flash('success', 'Enviado correctamente. Resolveremos su duda lo antes posible');
         } else {
             $request->session()->flash('error', 'Se ha producido un error, intentelo más tarde.');
