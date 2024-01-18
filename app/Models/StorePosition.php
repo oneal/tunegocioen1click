@@ -10,6 +10,8 @@ class StorePosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function store(): BelongsTo{
         return $this->belongsTo(Store::class, 'store_id');
     }

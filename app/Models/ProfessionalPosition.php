@@ -10,6 +10,8 @@ class ProfessionalPosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function professional(): BelongsTo{
         return $this->belongsTo(Professional::class, 'professional_id');
     }

@@ -10,6 +10,8 @@ class WorkOfferPosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function workoffer(): BelongsTo{
         return $this->belongsTo(WorkOffer::class, 'work_offer_id');
     }

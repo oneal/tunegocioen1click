@@ -10,6 +10,8 @@ class HotelPosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function hotel(): BelongsTo{
         return $this->belongsTo(Hotel::class, 'hotel_id');
     }

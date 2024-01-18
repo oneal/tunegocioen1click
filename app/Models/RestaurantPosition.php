@@ -10,6 +10,8 @@ class RestaurantPosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function restaurant(): BelongsTo{
         return $this->belongsTo(Restaurant::class, 'restaurant_id');
     }

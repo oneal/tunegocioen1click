@@ -10,6 +10,8 @@ class HomePosition extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['in_used'];
+
     function home(): BelongsTo{
         return $this->belongsTo(Home::class, 'home_id');
     }

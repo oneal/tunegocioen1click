@@ -137,9 +137,15 @@ Route::group(['prefix' => 'admin'], function () {
     });
 
     Route::group(['prefix' => 'duplicate', 'middleware' => ['admin.user']], function () {
-        Route::post('create', [Duplicate::class, 'create'])
-            ->name('duplicate.create');
-        Route::get('/', [BlogsAd::class, 'index'])
+        Route::post('create', [Duplicate::class, 'addDuplicate'])
+            ->name('duplicate.addDuplicate');
+        Route::get('search-data-by-type', [Duplicate::class, 'searchDataByType'])
+            ->name('duplicate.searchDataByType');
+        Route::get('search-category-by-type', [Duplicate::class, 'searchCategoryByType'])
+            ->name('duplicate.searchCategoryByType');
+        Route::get('search-positions', [Duplicate::class, 'searchPositions'])
+            ->name('duplicate.searchPositions');
+        Route::get('/', [Duplicate::class, 'index'])
             ->name('duplicate.index');
     });
 
