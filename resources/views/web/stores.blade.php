@@ -9,7 +9,7 @@
 
             @include('web.partials.info-top-section', ['title1' => 'El mejor almacén cerca de ti', 'title2' => 'Elige la categoría y la provincia en el buscador. Encuentra los almacenes que necesitas cerca de ti.'])
             <div class="row">
-                <div class="col-sm-12 col-12 mb-5 d-lg-none d-md-block d-sm-block d-block">
+                <div class="col-sm-12 col-12 mb-5 d-xl-none d-lg-block d-md-block d-sm-block d-block">
                     <h1 class="h1-section">Almacenes</h1>
                     <hr>
                     <?php $mobile = true;?>
@@ -21,17 +21,17 @@
                 @include('web.partials.ads-head', $positions)
             </div>
             <div class="row">
-                <div class="col-sm-4 col-12 d-lg-block d-md-none d-sm-none d-none">
+                <div class="col-sm-4 col-12 d-xl-block d-md-none d-sm-none d-none">
                     <h1 class="h1-section">Almacenes</h1>
                     <hr>
                     <?php $mobile = false;?>
                     @include('web.partials.filter-category-province', [$mobile, $categories, $provincies])
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
+                <div class="col-xl-4 col-lg-12 col-md-12 col-12">
                     <?php $positions = $positions20;?>
                     @include('web.partials.icons-position', $positions)
                 </div>
-                <div class="col-lg-4 col-md-12 col-12">
+                <div class="col-xl-4 col-lg-12 col-md-12 col-12">
                     <?php $positions = $positionsOther20;?>
                     @include('web.partials.icons-position', $positions)
                 </div>
