@@ -70,7 +70,7 @@
                             <h3 class="mt-3 mb-5 text-center"><span class="border-item-menu-footer">|</span> ULTIMOS POST: PROFESIONALES, ALMACENES, HOTELES, BARES/RESTAURANTES </h3>
                             @foreach($posts as $post)
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-                                    @include('web.partials.thumb-post', ['viewDescription' => false])
+                                    @include('web.partials.thumb-post', ['viewDescription' => false, 'color' => 'white'])
                                 </div>
                             @endforeach
                         </div>

@@ -6,7 +6,7 @@
         <div class="bg-overlay-bg dark"></div>
     </div>
 </div>
-<h4 class="title-card-blog mt-2"><a href="{{ route('blog.post.index', ['slug' => $post->name_slug]) }}">{{ $post->name }}</a></h4>
+<h4 class=" title-card-blog-{{ $color }} title-card-blog mt-2"><a href="{{ route('blog.post.index', ['slug' => $post->name_slug]) }}">{{ $post->name }}</a></h4>
 @if(isset($viewDescription) && $viewDescription == true)
     <p><?php echo substr(strip_tags($post->description),0 , 150)."..."; ?></p>
 @endif

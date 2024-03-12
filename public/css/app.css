@@ -159,7 +159,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 45px 20px 20px 20px;
     text-align: center;
     max-height: 449px;
-    height: 365px;
+    height: 100%;
 }
 
 .background-widget-post-buscador {
@@ -649,12 +649,20 @@ h1,h2,h3,h4,h5,h6 {
 
 .title-card-blog a{
     text-decoration: none;
-    color: #ffffff;
+    color: inherit;
+}
+
+.title-card-blog-black {
+    color: #000 !important;
+}
+
+.title-card-blog-white:hover {
+    color: white !important;
 }
 
 .title-card-blog a:hover{
     text-decoration: none;
-    color: #ffffff;
+    color: inherit;
 }
 
 .title-post {

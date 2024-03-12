@@ -14,7 +14,7 @@
                         <div class="row">
                             @foreach($posts as $post)
                                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3">
-                                    @include('web.partials.thumb-post', ['viewDescription' => false])
+                                    @include('web.partials.thumb-post', ['viewDescription' => false, 'color' => 'black'])
                                 </div>
                             @endforeach
                         </div>
