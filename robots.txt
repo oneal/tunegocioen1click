@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Disallowed Sub-Directories
+Disallow: /admin/
