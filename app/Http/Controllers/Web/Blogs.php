@@ -60,8 +60,8 @@ class Blogs extends Controller
                 }
             }
 
-            $title = $post['title'];
-            $description =  substr(strip_tags($post['name']), 0,200);
+            $title = $post['name'];
+            $description =  substr(strip_tags(preg_replace("/\r|\n/", "", $post['description'])), 0,200);
 
             return  view('web.blog-post', compact('post', 'postAd', 'title', 'description'));
         }

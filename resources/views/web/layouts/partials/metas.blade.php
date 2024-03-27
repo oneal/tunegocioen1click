@@ -4,3 +4,4 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>{!! $title . ' - tunegocioen1click.online' !!}</title>
 <meta name="description" content="{!! $description !!}">
+<meta name="robots" content="index,follow" />
